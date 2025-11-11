@@ -1,126 +1,429 @@
-/* VAriables i estils */
-:root {
-	--white: rgba(255,255,255,1);
-	--green: rgba(117,191,122,1);
-	--black: rgba(0,0,0,1);
-	--light-gray: rgba(158,157,162,1);
-	--gray: rgba(139,139,165,1);
-	--dark-gray: rgba(39,32,66,1);
-	--background: rgba(249,249,249,1);
+body{
+    font-family: "Inter";
+    background-color: #F9F9F9;
 }
-.big-title {
-	font-size: 64px;
-	font-family: "Inter";
-	font-weight: 700;
-	font-style: normal;
-	line-height: 65.91px;
-	text-decoration: none;
-	text-transform: none;
-}
-.normal {
-	font-size: 18px;
-	font-family: "Inter";
-	font-weight: 500;
-	font-style: normal;
-	line-height: 26px;
-	text-decoration: none;
-	text-transform: none;
-}
-.description-hero {
-	font-size: 24px;
-	font-family: "Inter";
-	font-weight: 400;
-	font-style: normal;
-	line-height: 33px;
-	text-decoration: none;
-	text-transform: none;
-    color: var(--light-gray);
-}
-.how-it-works .description-hero{
-    text-align:center;
-    width:620px;
-    margin:auto;
-}
-.button {
-	font-size: 24px;
-	font-family: Inter;
-	font-weight: 700;
-	font-style: normal;
-	text-decoration: none;
-	text-transform: none;
-}
-.section-title {
-	font-size: 47px;
-	font-family: Inter;
-	font-weight: 900;
-	font-style: normal;
-	line-height: 50.35px;
-	text-decoration: none;
-	text-transform: uppercase;
-    text-align:center;
-}
-.section-subtitle {
-	font-size: 22px;
-	font-family: Inter;
-	font-weight: 800;
-	font-style: normal;
-	line-height: 50.35px;
-	text-decoration: none;
-	text-transform: none;
-}
-.small-button {
-	font-size: 16px;
-	font-family: Inter;
-	font-weight: 700;
-	font-style: normal;
-	text-decoration: none;
-	text-transform: none;
-}
-.small {
-	font-size: 16px;
-	font-family: Inter;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	text-transform: none;
-}
-
 header{
-    padding-top:80px;
+    padding-top:  40px; 
+    background-color: white;
+
 }
 .container{
-    width: 1200px;
-    margin:auto;
-    
-}
-.flex{
-    display:flex;
+    width: 1300px;
+    margin: auto;
+    display: flex;
     justify-content: space-between;
 }
 header ul{
     display: flex;
-    padding:0;
+    padding: 0;
     list-style: none;
+    align-items: center;
+}
+.logo{
+    margin: auto 0;
 }
 header li{
     padding:5px 30px;
 }
+header button{
+    background-color: #75BF7A;
+    border: none;
+    border-radius: 5px;
+    width: 179px;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+header button:hover{
+    background-color: #65a76a;
+    cursor: pointer;
+    transition: all 0.2s;
+}
 header a{
     color: var(--Dark-gray, #272042);
-    font-family: "Inter";
+    font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 26px; /* 144.444% */
-    text-decoration: none; /* treure subratllat */
+    text-decoration: none;
+    transition: all 0.2s;
+    display: block;
 }
-.green{
-    color: var(--green);
+header a:hover{
+    color: #75BF7A;
 }
 
-/* Secció How Tere works */
-.how-it-works .row{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:40px;
+.primera-seccio{
+    display: flex;
+    height: 582.81px;
+    margin: 55px 0 95px 80px;
+
+}
+
+.text{
+    flex-direction: column;
+}
+
+.title{
+    font-size: 64px;
+    font-weight: 600;
+    width: 644px;
+    padding-top: 50px;
+}
+
+.primera-seccio .paragraf{
+    width: 550px;
+    font-size: 24px;
+    color: #9E9DA2;
+}
+
+.imatge{
+    height: 582.81px;
+}
+.download{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    background-color: #272042;
+    border-radius: 10px;
+    border: none;
+    width: 260px;
+    height: 66.77px;
+    padding-left:33px;
+    gap: 10px;
+}
+
+.download:hover{
+    background-color: #1b152b;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.apply-to-drive{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #75BF7A;
+    border-radius: 6px;
+    height: 157px;
+    margin: 80px 80px 0 80px;
+    gap: 127px;
+}
+
+.apply-to-drive .text{
+    text-align: start;
+    font-size: 24px;
+    color: white;
+    width: 241px;
+
+}
+
+.apply .input{
+    width: 499px;
+    height: 67px;
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
+    font-size: 20px;
+    padding-left: 37px;
+    color: #DADADA;
+}
+.apply .input::placeholder{
+    color: #DADADA;
+}
+
+.apply{
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+}
+.apply .button{
+    background-color: #272042;
+    color: white;
+    font-size: 24px;
+    width: 260px;
+    height: 67px;
+    border-radius: 5px;
+    border: none;
+}
+
+.apply .button:hover{
+    background-color: #1b152b;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.botons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.how-tere-works{
+    margin-top: 144px;
+
+}
+
+.green-word{
+    color: #75BF7A;
+}
+.paragrafs{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 24px;
+    color: #9E9DA2;
+    
+}
+.graella{
+    display: grid;
+    grid-template-columns: 290px 480px 290px;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.selected-dot{
+    width: 12.77px;
+    height: 12.77px;
+    background-color: #62a466;
+    border-radius: 50%;
+    text-align: center;
+}
+.dot{
+    width: 12.77px;
+    height: 12.77px;
+    background: #75BF7A;
+    opacity: 0.5;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.primera-columna{
+    margin: 55px 0;
+}
+
+.segona-columna{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.tercera-columna{
+    margin: 55px 0;
+    
+}
+.dots{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 59px;
+    margin-bottom: 0;
+    justify-content: center;
+}
+h2{
+    font-size: 22px;
+    font-weight: bold;
+}
+.bloc-1{
+    height: 285px;
+    text-align: end;
+}
+
+.bloc-3{
+    height: 285px;
+    text-align: end;
+}
+
+.bloc-2{
+    height: 285px;
+    text-align: start;
+}
+
+.bloc-4{
+    height: 285px;
+    text-align: start;
+}
+
+
+
+.graella .paragraf{
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 300;
+    color: #9E9DA2;
+}
+
+h1{
+    font-size: 47px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.tere-benefits .title{
+    font-size: 47px;
+    font-weight: 800;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 81px;
+}
+
+
+.steps{
+    display: flex;
+    flex-direction: column;
+    gap: 67px;
+    margin-bottom: 236px;
+}
+
+.headings{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0;
+    gap: 37px;
+
+}
+
+.steps .step-title{
+    width: 227px;
+    height: 67px;
+    font-size: 33.94px;
+    font-weight: 300;
+    text-align: start;
+}
+.steps .step-number{
+    font-size: 88px;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color: #75BF7A;
+    text-align: start;
+}
+
+.steps .step-paragraf{
+    align-items: flex-start;
+    margin: 0;
+    color: #9E9DA2;
+}
+
+.step-2 .text{
+    text-align: start;
+    padding: 0;
+    margin: 0;
+}
+
+.step-1 .text{
+    display: flex;
+    flex-direction: column;
+    gap: none;
+    height: 171px;
+}
+.step-1{
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.step-1, .step-2, .step-3{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 5px;
+    width: 900px;
+    height: 303px;
+    justify-content: space-between;
+    margin-left: 80px;
+    padding-left: 40px;
+    padding-right: 110px;
+    align-items: center;
+    
+}
+
+.step-2{
+    align-items: center;
+    margin-left: auto;
+    margin-right: 80px;
+    padding-left: 110px;
+}
+.step-2 .step-title{
+    text-align: start;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.step-image{
+    width:256.79px;
+    height: 254.82px;
+}
+
+footer{
+    background-color: white;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns:319px 288px 308px 525px;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    padding-top: 55px;
+    padding-bottom: 13px;
+    padding-left: 70px;
+    border: solid 0.6px black;
+    background-color: white;
+}
+
+
+.logo-2{
+    width: 128.7px;
+    height: 36.22px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+
+footer .botons{
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+}
+
+footer .download .logo{
+    width: 21px;
+    height: 24px;
+}
+
+footer .download{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #272042;
+    border-radius: 5px;
+    border: none;
+    width: 174px;
+    height: 46px;
+    padding-left:25px;
+    gap: 10px;
+}
+
+footer .download:hover{
+    background-color: #1b152b;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+footer .footer-text{
+    color: #8B8BA5;
+}
+
+footer .copyright{
+    margin-top: 41px;
+    color:#75BF7A;
+    text-align: center;
+    padding-bottom: 200px;
 }
